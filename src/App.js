@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Shop from "./components/shop";
+import TicTackToe from "./components/tickTackToe";
+
+function Home() {
+  return <h1>Hello World</h1>;
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TicTackToe></TicTackToe>;<Shop></Shop>
+      <Home />
+    </>
   );
 }
-
 export default App;
